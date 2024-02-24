@@ -1,6 +1,3 @@
-This is Yaguang Li's personal webpage.
-
-
 <html lang="en"> <head>
 
  <meta charset="UTF-8">
