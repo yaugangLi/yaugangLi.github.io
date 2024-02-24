@@ -10,11 +10,10 @@
   theory and deep learning, with a particular interest in its application on robots,
   autonomous vehicles and other autonomous systems. I also had the opportunity to collaborate
   with Professor Qiuguo Zhu at Zhejiang University before coming to CMU.</p>
-  <h2>Skills</h2>
-  <ul>
-    <li>Programming Languages: Python, C/C++, CUDA, MATLAB</li>
-    <li>Developing Systems: ROS</li>
-  </ul>
+
+  <h2>Education</h2>
+  <p>M.S. Electrical and Computer Engineering (2023-)</p>
+  <p>B.S. Automation, Zhejiang University (2019-2023)</p>
 
   <h2>Projects</h2>
   <h3>Project 1: Blind Source Separation using Machine Learning Approaches</h3>
@@ -30,17 +29,21 @@
   <p>Link: <a href="https://www.example.com/sales-analysis">Sales Analysis</a></p>
 
   <h2>Experience</h2>
-  <h3>Software Developer Intern at XYZ Company</h3>
+  <h3>Teaching Assistant, Robotics Innovation and Integrated Practice Course, Zhejiang University, 2022</h3>
   <ul>
-    <li>Worked on a team to develop and maintain web applications using React and Node.js.</li>
-    <li>Collaborated with cross-functional teams to implement new features and resolve issues.</li>
+    <li>Responsible for assigning practical projects to students, including basic and advanced tasks.</li>
+    <li>Held office hours once every two weeks to give instructions to students on their assignments and projects.</li>
+    <li>Evaluated and graded students’ assignments at the end of the semester.</li>
   </ul>
 
-  <h2>Education</h2>
-  <p>Bachelor's Degree in Computer Science from ABC University (Year)</p>
+  <h2>Skills</h2>
+  <ul>
+    <li>Programming Languages: Python, C/C++, CUDA, MATLAB</li>
+    <li>Developing Systems: ROS</li>
+  </ul>
 
   <h2>Contact</h2>
-  <p>You can reach me via email at <a href="mailto:your.email@example.com">your.email@example.com</a>.</p>
+  <p>Email: <a href="mailto:yaguangl@andrew.cmu.edu">yaguangl@andrew.cmu.edu</a>.</p>
 
   <p>Visit my <a href="https://github.com/yourusername">GitHub</a> for more projects and code samples.</p>
 </body>
