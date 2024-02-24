@@ -19,7 +19,7 @@
     electromyography (HDEMG) data.</p>
   <p>Identified the number of motor unit (MU) sources from the original data by removing
     duplicate MUs in the postprocessing phase, and calculated the MU action potentials on each dataset.</p>
-  <p>Link: <a href="https://www.example.com/portfolio">Portfolio Website</a></p>
+  <p>Link: <a href="https://github.com/yaugangLi/Blind-Source-Separation-using-ML-methods">Portfolio Website</a></p>
 
   <h3>Project 2: Legged Robot Locomotion Over Challenging Terrain</h3>
   <p>Description: Trained a quadrupedal robot called Jueying to walk up and down stairs with Raisim.</p>
