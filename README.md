@@ -1,5 +1,6 @@
 <html lang="en">
 <head>
+  <title>Yaguang Li Personal Website</title>
 </head>
 <body>
   <h2>About Me</h2>
@@ -11,7 +12,7 @@
   with Professor Qiuguo Zhu at Zhejiang University before coming to CMU.</p>
 
   <h2>Education</h2>
-  <p>M.S. Electrical and Computer Engineering (2023-)</p>
+  <p>M.S. Electrical and Computer Engineering, Carnegie Mellon University (2023-)</p>
   <p>B.S. Automation, Zhejiang University (2019-2023)</p>
 
   <h2>Projects</h2>
@@ -23,8 +24,12 @@
     duplicate MUs in the postprocessing phase, and calculated the MU action potentials on each dataset.</p>
   <p>Link: <a href="https://www.example.com/portfolio">Portfolio Website</a></p>
 
-  <h3>Project 2: Data Analysis of Sales Trends</h3>
-  <p>Description: Analyzed sales data to identify trends and patterns, providing valuable insights for decision-making.</p>
+  <h3>Project 2: Legged Robot Locomotion Over Challenging Terrain</h3>
+  <p>Description: Trained a quadrupedal robot called Jueying to walk up and down stairs with Raisim.</p>
+  <p>Added exteroceptive information to produce proactive movement so that the robot was able to automatically lift its
+legs when detecting stairs forward.</p>
+  <p>Introduced curriculum learning method to let the robot better adapt to different challenging terrain.</p>
+  <p>Redesigned the reward system to suit the demand of the task.</p>
   <p>Link: <a href="https://www.example.com/sales-analysis">Sales Analysis</a></p>
 
   <h2>Experience</h2>
@@ -44,6 +49,6 @@
   <h2>Contact</h2>
   <p>Email: <a href="mailto:yaguangl@andrew.cmu.edu">yaguangl@andrew.cmu.edu</a>.</p>
 
-  <p>Visit my <a href="https://github.com/yourusername">GitHub</a> for more projects and code samples.</p>
+  <p>Visit my <a href="https://github.com/yaugangLi">GitHub</a> for more projects and code samples.</p>
 </body>
 </html>
