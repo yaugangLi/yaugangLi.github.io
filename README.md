@@ -1,7 +1,5 @@
 <html lang="en"> <head>
 
- <title>Yaguang Li Personal Website</title>
-
 </head>
 
 <body>
