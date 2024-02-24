@@ -1,6 +1,6 @@
 <html lang="en">
 <head>
-  <title>Yaguang Li Personal Website</title>
+  <title></title>
 </head>
 <body>
   <h2>About Me</h2>
