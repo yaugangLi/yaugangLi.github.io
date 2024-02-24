@@ -6,8 +6,6 @@
 
 </head> <body>
 
- <h3>Yaguang Li</h3>
-
  <p>Welcome to my personal website. I'm a Master's
   student at Carnegie Mellon University, majoring in ECE.</p>
 
