@@ -1,35 +1,32 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <title>Yaguang Li Personal Website</title>
 </head>
 <body>
-  <h1>My Personal Website</h1>
-
   <h2>About Me</h2>
-  <p>Welcome to my personal website. I'm a first-year Master's student at Carnegie Mellon
-      University, majoring in ECE.</p>
+  <p>I'm a first-year Master's student at Carnegie Mellon University, majoring in ECE.</p>
   <p>This semester, I am working on a project at the Control and Learning Lab under the
   guidance of Professor Yorie Nakahira. My research focuses on the integration of control
   theory and deep learning, with a particular interest in its application on robots,
   autonomous vehicles and other autonomous systems. I also had the opportunity to collaborate
-  with Professor Quiguo Zhu at Zhejiang University before coming to CMU.</p>
+  with Professor Qiuguo Zhu at Zhejiang University before coming to CMU.</p>
   <h2>Skills</h2>
   <ul>
-    <li>Programming Languages: Python, JavaScript, Java</li>
-    <li>Web Technologies: HTML, CSS, React, Node.js</li>
-    <li>Data Analysis: SQL, Pandas, NumPy</li>
+    <li>Programming Languages: Python, C/C++, CUDA, MATLAB</li>
+    <li>Developing Systems: ROS</li>
   </ul>
 
   <h2>Projects</h2>
-  <h3>Project 1: Portfolio Website</h3>
-  <p>Description: Designed and developed a responsive portfolio website to showcase my projects and skills.</p>
-  <p>Technologies Used: HTML, CSS, JavaScript</p>
+  <h3>Project 1: Blind Source Separation using Machine Learning Approaches</h3>
+  <p>Description: Applied Non-negative Matrix Factorization (NMF) and Fast Independent
+    Component Analysis (FastICA) algorithms to separate mixed signals from the high-density
+    electromyography (HDEMG) data.</p>
+  <p>Identified the number of motor unit (MU) sources from the original data by removing
+    duplicate MUs in the postprocessing phase, and calculated the MU action potentials on each dataset.</p>
   <p>Link: <a href="https://www.example.com/portfolio">Portfolio Website</a></p>
 
   <h3>Project 2: Data Analysis of Sales Trends</h3>
   <p>Description: Analyzed sales data to identify trends and patterns, providing valuable insights for decision-making.</p>
-  <p>Technologies Used: Python, Pandas, Matplotlib</p>
   <p>Link: <a href="https://www.example.com/sales-analysis">Sales Analysis</a></p>
 
   <h2>Experience</h2>
