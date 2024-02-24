@@ -1,7 +1,4 @@
 <html lang="en">
-<head>
-  <title>Yaguang Li Personal Website</title>
-</head>
 <body>
   <h2>About Me</h2>
   <p>I'm a first-year Master's student at Carnegie Mellon University, majoring in ECE.</p>
