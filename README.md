@@ -1,6 +1,5 @@
 <html lang="en">
 <head>
-  <title></title>
 </head>
 <body>
   <h2>About Me</h2>
