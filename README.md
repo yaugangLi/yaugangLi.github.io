@@ -6,62 +6,31 @@
 
 </head> <body>
 
- <p>Welcome to my personal website. I'm a Master's
+ <p>Welcome to my personal website. I'm a first-year Master's
   student at Carnegie Mellon University, majoring in ECE.</p>
 
- <p>“My interests are mainly on control theroy and its applications on robots, autonomous vehicles and quadrotors.</p>
+ <p>This semester, I am working on a project at the Control and Learning Lab under the
+  guidance of Professor Yorie Nakahira. My research focuses on the integration of control
+  theory and deep learning, with a particular interest in its application on robots,
+  autonomous vehicles and other autonomous systems. I also had the opportunity to collaborate
+  with Professor Quiguo Zhu at Zhejiang University before coming to CMU.</p>
 
  <hr/>
 
- <!-- 列表标签 -->
-
-日程表
+Education
 
  <ul>
 
- <li>看书</li>
+ <li>M.S., Electrical and Computer Engineering, 2023-2025(expected)</li>
 
- <li>看书</li>
+ <li>Carnegie Mellon University</li>
 
- <li>看书</li>
+ <li>B.S. Automation, 2019-2023</li>
 
- <li>玩游戏</li>
+ <li>Zhejiang University</li>
 
  </ul>
 
- <ol type="a">
-
- <li>看书</li>
-
- <li>看书</li>
-
- <li>看书</li>
-
- <li>玩游戏</li>
-
- </ol>
-
- <dl>
-
- <dt>问：一加一等于几</dt>
-
- <dd>答：不知道</dd>
-
- <dt>问：HTML?</dt>
-
- <dd>答：超文本标记语言</dd>
-
- <dt>问：树上有些什么</dt>
-
- <dd>答：金苹果</dd>
-
- </dl>
-
- <div>aaa</div>
-
- <div>bbb</div>
-
- <span>aaaa</span><span>bbbb</span>
-
 </body>
 
+</html>
