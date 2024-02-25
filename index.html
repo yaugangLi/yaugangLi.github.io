@@ -1,50 +1,387 @@
-<html lang="en">
-<body>
-  <h2>About Me</h2>
-  <p>I'm a first-year Master's student at Carnegie Mellon University, majoring in ECE.</p>
-  <p>This semester, I am working on a project at the Control and Learning Lab under the
-  guidance of Professor Yorie Nakahira. My research focuses on the integration of control
-  theory and deep learning, with a particular interest in its application on robots,
-  autonomous vehicles and other autonomous systems. I also had the opportunity to collaborate
-  with Professor Qiuguo Zhu at Zhejiang University before coming to CMU.</p>
 
-  <h2>Education</h2>
-  <p>M.S. Electrical and Computer Engineering, Carnegie Mellon University (2023-)</p>
-  <p>B.S. Automation, Zhejiang University (2019-2023)</p>
+<!DOCTYPE HTML>
+<html>
 
-  <h2>Projects</h2>
-  <h3>Project 1: Blind Source Separation using Machine Learning Approaches</h3>
-  <p>Description: Applied Non-negative Matrix Factorization (NMF) and Fast Independent
-    Component Analysis (FastICA) algorithms to separate mixed signals from the high-density
-    electromyography (HDEMG) data.</p>
-  <p>Identified the number of motor unit (MU) sources from the original data by removing
-    duplicate MUs in the postprocessing phase, and calculated the MU action potentials on each dataset.</p>
-  <p>Link: <a href="https://github.com/yaugangLi/Blind-Source-Separation-using-ML-methods">Portfolio</a></p>
+  <head>
+    <title>Pengyu Cui's Homepage</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="description" content="Pengyu Cui's Homepage">
+    <link rel="shortcut icon" href="favicon.ico">
+    <style>
+      html {
+        -webkit-text-size-adjust: 100%;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 16px;
+      }
 
-  <h3>Project 2: Legged Robot Locomotion Over Challenging Terrain</h3>
-  <p>Description: Trained a quadrupedal robot called Jueying to walk up and down stairs with Raisim.</p>
-  <p>Added exteroceptive information to produce proactive movement so that the robot was able to automatically lift its
-legs when detecting stairs forward.</p>
-  <p>Introduced curriculum learning method to let the robot better adapt to different challenging terrain.</p>
-  <p>Redesigned the reward system to suit the demand of the task.</p>
+      section {
+        max-width: 50rem;
+        margin: 0 auto;
+      }
 
-  <h2>Experience</h2>
-  <h3>Teaching Assistant, Robotics Innovation and Integrated Practice Course, Zhejiang University, 2022</h3>
-  <ul>
-    <li>Responsible for assigning practical projects to students, including basic and advanced tasks.</li>
-    <li>Held office hours once every two weeks to give instructions to students on their assignments and projects.</li>
-    <li>Evaluated and graded students’ assignments at the end of the semester.</li>
-  </ul>
+      hr {
+        max-width: 50rem;
+        margin: 2rem auto;
+        height: 1px;
+        border: none;
+        border-top: 1px solid #ddd;
+      }
 
-  <h2>Skills</h2>
-  <ul>
-    <li>Programming Languages: Python, C/C++, CUDA, MATLAB</li>
-    <li>Developing Systems: ROS</li>
-  </ul>
+      a {
+        text-decoration: none;
+      }
 
-  <h2>Contact</h2>
-  <p>Email: <a href="mailto:yaguangl@andrew.cmu.edu">yaguangl@andrew.cmu.edu</a>.</p>
+      #intro {
+        display: grid;
+        grid-template-columns: 3fr 4fr;
+        grid-column-gap: 3rem;
+      }
 
-  <p>Visit my <a href="https://github.com/yaugangLi">GitHub</a> for more projects and code samples.</p>
-</body>
+      #selfie-container {
+        display: flex;
+        width: 15.5rem;
+        justify-self: right;
+        align-self: center;
+        padding: 0.3rem;
+        border-radius: 0.7rem;
+        background-color: #eee;
+      }
+
+      #selfie {
+        width: 100%;
+        height: 100%; /* Fixed height issue on Safari 12 (specifying any percent-based value could fix it) don't know why. */
+        border-radius: 0.5rem;
+      }
+
+      #intro-text {
+        justify-self: left;
+        align-self: center;
+        line-height: 1.5rem;
+      }
+
+      .project-container {
+        display: grid;
+        list-style: none;
+        padding: 0;
+      }
+
+      .project-container>li:nth-child(odd) {
+        background-color: #fafafa;
+      }
+
+      .project-entry {
+        display: grid;
+        grid-template-columns: 55fr 100fr;
+      }
+
+      .project-icon-container {
+        display: flex;
+        padding: 1rem;
+        justify-content: center;
+      }
+
+      .project-icon {
+        max-width: 100%;
+        max-height: 12rem;
+        align-self: center;
+      }
+
+
+      .project-info-container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+      }
+
+      .project-description {
+        flex-grow: 1;
+        line-height: 1.5rem;
+      }
+
+      .project-outer-links {
+        display: flex;
+        align-items: center;
+        margin: 1rem 0;
+      }
+
+      .project-outer-links>code {
+        font-size: 0.9em;
+        font-family: inherit;
+        display: inline-block;
+        margin-right: 0.5rem;
+        border: 1px solid #66f;
+        border-radius: 0.4rem;
+        padding: 0.3rem 0.5rem;
+      }
+
+      
+      @media screen and (max-width: 768px) {
+        html {
+          font-size: 14px;
+        }
+
+        #intro {
+          grid-column-gap: 1.75rem;
+        }
+      }
+
+      @media screen and (max-width: 550px) {
+        html {
+          font-size: 12px;
+        }
+
+        #intro {
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          font-size: 13px;
+        }
+
+        h2 {
+          padding-left: 1rem;
+        }
+      }
+      
+    </style>
+  </head>
+
+  <body>
+
+    <!-- Horizontal Line -->
+    <hr />
+
+    <!-- Introduction -->
+    <section id="intro">
+
+      <div id="selfie-container">
+        <img id="selfie" src="homepage-images/me.jpg" />
+      </div>
+
+      <div id="intro-text">
+        <h2>Pengyu Cui（崔彭禹）</h2>
+        <p>
+          <span>Bachelor of Science in Data Science</span> <br>
+          <span>Yuanpei College, </span> <a href="https://english.pku.edu.cn/" target="_blank">Peking University</a>
+        </p>
+        <p>
+          <strong>Address:</strong> <span>Haidian District, Beijing, China</span> <br>
+          <strong>Email:</strong> <span>cuipy@pku.edu.cn</span> <br>
+          <strong>Github:</strong> <a href="https://github.com/PkuCuipy" target="_blank">PkuCuipy</a>
+        </p>
+      </div>
+
+    </section>
+
+
+    <!-- Horizontal Line -->
+    <hr />
+
+    <!-- Projects -->
+    <section id="projects">
+
+      <h2>Projects Gallery</h2>
+
+      <ul class="project-container">
+        <!-- paste begin -->
+
+        <!-- elite-distribution-visualization -->
+        <li class="project-entry">
+          <div class="project-icon-container">
+            <img class="project-icon" src="homepage-images/elite-distribution-visualization.png" />
+          </div>
+          <div class="project-info-container">
+            <h3>Interactive Visualization of Ancient Chinese Elite Distribution</h3>
+            <div class="project-description">
+              Visualize the shift of distribution of ancient Chinese elites from 618 A.C. to 1911 A.C., with 2D scatter,
+              KDE plots, and an arrow-based interaction. 
+              <br>
+              <em>Data source: China Biographical Database (CBDB)</em>.
+            </div>
+            <div class="project-outer-links">
+              <code><a href="https://github.com/PkuCuipy/elite-distribution" target="_blank">Code</a></code>
+              <code><a href="elite_distribution_build_version/build/" target="_blank">Demo</a></code>
+            </div>
+          </div>
+        </li>
+
+        <!-- arap-deformation -->
+        <li class="project-entry">
+          <div class="project-icon-container">
+            <img class="project-icon" src="homepage-images/arap-deformation.png" />
+          </div>
+          <div class="project-info-container">
+            <h3>Interactive ARAP Mesh Deformation</h3>
+            <div class="project-description">
+              An interactive implementation of paper “As-Rigid-As-Possible Surface Modeling” (Sorkine and Alexa, 2007)
+            </div>
+            <div class="project-outer-links">
+              <code><a href="https://github.com/PkuCuipy/arap-mesh-deform" target="_blank">Code</a></code>
+              <code><a href="arap-mesh-deform" target="_blank">Demo</a></code>
+              <code><a href="https://youtu.be/ONV-ctMHuF8" target="_blank">Video</a></code>
+            </div>
+          </div>
+        </li>
+
+        <!-- scanned-doc-vectorization -->
+        <li class="project-entry">
+          <div class="project-icon-container">
+            <img class="project-icon" src="homepage-images/scanned-doc-vectorization.png" />
+          </div>
+          <div class="project-info-container">
+            <h3>Scanned Document Vectorizer</h3>
+            <div class="project-description">
+              Enhance low-resolution scanned document into high-quality vectorized PDF with a data-driven approach.
+            </div>
+            <div class="project-outer-links">
+              <code><a href="https://github.com/PkuCuipy/scanned-doc-vectorizer" target="_blank">Code</a></code>
+              <code><a href="pdf/scanned-doc-vectorization-slides.pdf" target="_blank">Slides</a></code>
+            </div>
+          </div>
+        </li>
+
+        <!-- icv-assignments -->
+        <li class="project-entry">
+          <div class="project-icon-container">
+            <img class="project-icon" src="homepage-images/icv-assignments.png" />
+          </div>
+          <div class="project-info-container">
+            <h3>Introduction to Computer Vision Course Projects</h3>
+            <div class="project-description">
+              Course projects covering selected topics in Computer Vision.
+              <br>
+              <em>e.g.</em> Canny-Edge, RANSAC, Batch-Norm, Back-Prop (NumPy);
+              <br>
+              ConvNN, PointNet, Mask RCNN (PyTorch).
+            </div>
+            <div class="project-outer-links">
+              <code><a href="https://github.com/PkuCuipy/icv-assignments" target="_blank">Code</a></code>
+              <code><a href="pdf/icv-cheatsheet-2022-spring-pkucuipy.pdf" target="_blank">Notes</a></code>
+            </div>
+          </div>
+        </li>
+
+        <!-- how-to-optimize-gemm -->
+        <li class="project-entry">
+          <div class="project-icon-container">
+            <img class="project-icon" src="homepage-images/how-to-optimize-gemm.png" />
+          </div>
+          <div class="project-info-container">
+            <h3>Translated Tutorial of Matrix Multiplication Optimization</h3>
+            <div class="project-description">
+              Based on classic tutorial “<a href="https://github.com/flame/how-to-optimize-gemm/wiki"
+                target="_blank">flame/how-to-optimize-gemm</a>”;
+              <br>
+              Over 100x speed boost on a single CPU core with AVX-512.
+            </div>
+            <div class="project-outer-links">
+              <code><a href="https://zhuanlan.zhihu.com/p/557087291" target="_blank">Article</a></code>
+              <code><a href="https://github.com/PkuCuipy/how-to-optimize-gemm-zh-notes" target="_blank">Code</a></code>
+            </div>
+          </div>
+        </li>
+
+        <!-- redstone-music-converter -->
+        <li class="project-entry">
+          <div class="project-icon-container">
+            <img class="project-icon" src="homepage-images/redstone-music-converter.png" />
+          </div>
+          <div class="project-info-container">
+            <h3>Minecraft Redstone Music Converter</h3>
+            <div class="project-description">
+              Translate any music MIDI file into Minecraft redstone circuits;
+              <br>
+              Support multiple tracks with up to five instruments!
+            </div>
+            <div class="project-outer-links">
+              <code><a href="https://github.com/PkuCuipy/midi-to-redstone-music" target="_blank">Code</a></code>
+              <code><a href="https://youtu.be/pIrJhmEIU00" target="_blank">Video</a></code>
+            </div>
+          </div>
+        </li>
+
+        <!-- gpa-simulator -->
+        <li class="project-entry">
+          <div class="project-icon-container">
+            <img class="project-icon" src="homepage-images/gpa-simulator.png" />
+          </div>
+          <div class="project-info-container">
+            <h3>GPA Simulator</h3>
+            <div class="project-description">
+              Enhanced GPA utility based on official PKU Helper API.
+              <br>
+              Additional features including filtering, trend analysis, grade simulations, <em>etc.</em>
+            </div>
+            <div class="project-outer-links">
+              <code><a href="https://github.com/PkuCuipy/gpa-simulator" target="_blank">Code</a></code>
+              <code><a href="https://pkucuipy.github.io/gpa-simulator-build/" target="_blank">Demo</a></code>
+            </div>
+          </div>
+        </li>
+
+        <!-- genetic-triangles -->
+        <li class="project-entry">
+          <div class="project-icon-container">
+            <img class="project-icon" src="homepage-images/genetic-triangles.png" />
+          </div>
+          <div class="project-info-container">
+            <h3>Genetic Algorithm for Triangle Fitting</h3>
+            <div class="project-description">
+              Evolutionary art of hundreds of triangles!
+            </div>
+            <div class="project-outer-links">
+              <code><a href="https://github.com/PkuCuipy/eartist" target="_blank">Code</a></code>
+              <code><a href="https://github.com/PkuCuipy/eartist#examples" target="_blank">Example</a></code>
+            </div>
+          </div>
+        </li>
+
+        <!-- realistic-color-mixing -->
+        <li class="project-entry">
+          <div class="project-icon-container">
+            <img class="project-icon" src="homepage-images/realistic-color-mixing.png" />
+          </div>
+          <div class="project-info-container">
+            <h3>Realistic Color-Mixing Drawing Board (for iPad)</h3>
+            <div class="project-description">
+              With realistic color-mixing algorithm from paper “Practical Pigment Mixing for Digital Painting” (ŠÁRKA and
+              ONDŘEJ, 2021)
+            </div>
+            <div class="project-outer-links">
+              <code><a href="https://pkucuipy.github.io/vcl-final/" target="_blank">Demo</a></code>
+            </div>
+          </div>
+        </li>
+
+        <!-- simple-ios-style-calculator -->
+        <li class="project-entry">
+          <div class="project-icon-container">
+            <img class="project-icon" src="homepage-images/simple-ios-style-calculator.png" />
+          </div>
+          <div class="project-info-container">
+            <h3>An iOS-Style Calculator </h3>
+            <div class="project-description">
+              Calculate with mouse, keyboard or touchscreen!
+            </div>
+            <div class="project-outer-links">
+              <code><a href="tiny-ios-styled-calculator" target="_blank">Demo</a></code>
+            </div>
+          </div>
+        </li>
+
+        <!-- paste end -->
+      </ul>
+    </section>
+
+
+    <!-- Horizontal Line -->
+    <hr />
+
+    <!-- copywrite -->
+    <p style="text-align: center; margin-bottom: 0rem;">© Pengyu Cui </p>
+    <p style="text-align: center; margin-bottom: 4rem; margin-top: 0.5rem">Last Update: 12/02/2023 </p>
+
+
+  </body>
+
 </html>
