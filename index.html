@@ -1,0 +1,288 @@
+<!DOCTYPE HTML>
+<html>
+
+  <head>
+    <title>Yaguang Li</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="description" content="Yaguang Li">
+    <link rel="shortcut icon" href="favicon.ico">
+    <style>
+      html {
+        -webkit-text-size-adjust: 100%;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 16px;
+        background-color: gainsboro;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      section {
+        max-width: 80rem;
+        margin: 0 auto;
+      }
+
+      hr {
+        max-width: 50rem;
+        margin: 2rem auto;
+        height: 1px;
+        border: none;
+        border-top: 1px solid #ddd;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+
+      #intro {
+        display: grid;
+        grid-template-columns: 3fr 4fr;
+        grid-column-gap: 3rem;
+      }
+
+      #selfie-container {
+        display: flex;
+        width: 25.5rem;
+        justify-self: center;
+        align-self: center;
+        padding: 0.3rem;
+        border-radius: 0.7rem;
+        background-color: #eee;
+      }
+
+      #selfie {
+        width: 100%;
+        height: 100%; /* Fixed height issue on Safari 12 (specifying any percent-based value could fix it) don't know why. */
+        border-radius: 0.5rem;
+      }
+
+      #intro-text {
+        justify-self: left;
+        align-self: center;
+        line-height: 1.5rem;
+      }
+
+      .project-container {
+        display: grid;
+        list-style: none;
+        padding: 0;
+      }
+
+      .project-container>li:nth-child(odd) {
+        background-color: #fafafa;
+      }
+
+      .project-entry {
+        display: grid;
+        grid-template-columns: 55fr 100fr;
+      }
+
+      .project-icon-container {
+        display: flex;
+        padding: 1rem;
+        justify-content: center;
+      }
+
+      .project-icon {
+        max-width: 100%;
+        max-height: 12rem;
+        align-self: center;
+      }
+      
+      .project-info-container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+      }
+
+      .project-description {
+        flex-grow: 1;
+        line-height: 1.5rem;
+      }
+
+      .project-outer-links {
+        display: flex;
+        align-items: center;
+        margin: 1rem 0;
+      }
+
+      .project-outer-links>code {
+        font-size: 0.9em;
+        font-family: inherit;
+        display: inline-block;
+        margin-right: 0.5rem;
+        border: 1px solid #66f;
+        border-radius: 0.4rem;
+        padding: 0.3rem 0.5rem;
+      }
+
+      
+      @media screen and (max-width: 768px) {
+        html {
+          font-size: 14px;
+        }
+
+        #intro {
+          grid-column-gap: 1.75rem;
+        }
+      }
+
+      @media screen and (max-width: 550px) {
+        html {
+          font-size: 12px;
+        }
+
+        #intro {
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          font-size: 13px;
+        }
+
+        h2 {
+          padding-left: 1rem;
+        }
+      }
+      
+    </style>
+  </head>
+
+  <body>
+
+    <!-- Horizontal Line -->
+    <hr />
+
+    <!-- Introduction -->
+    <section id="intro">
+
+      <div id="selfie-container">
+        <img id="selfie" src="images/me.jpg" />
+      </div>
+
+
+
+      <div id="intro-text">
+        <h2>Yaguang Li</h2>
+        <p>
+          <p>I'm a first-year Master's student at Carnegie Mellon University, majoring in Electrical and Computer
+            Engineering.</p>
+          <p>This semester, I am working on a project at the <a href="https://www.cmu.edu/ece/learning-control/"
+                                                                target="_blank">Control and Learning Group</a>
+            under the guidance of Professor Yorie Nakahira. My research focuses on the integration of control
+            theory and deep learning, with a particular interest in its application on robots,
+            autonomous vehicles and other autonomous systems. I also had the opportunity to collaborate
+            with Professor <a href="https://person.zju.edu.cn/en/0011353" target="_blank">Qiuguo Zhu</a> at Zhejiang
+            University before coming to CMU.</p>
+<!--          <strong>M.S. Electrical and Computer Engineering</strong> <br>-->
+<!--          <p style="padding-left: 20px;">Carnegie Mellon University (2023-)</p>-->
+<!--          <strong>B.S. Automation</strong> <br>-->
+<!--          <p style="padding-left: 20px;">Zhejiang University (2019-2023)</p>-->
+        </p>
+        <p>
+          <strong>Email:</strong> <span>yaguangl@andrew.cmu.edu</span> <br>
+          <strong>Github:</strong> <a href="https://github.com/yaugangLi" target="_blank">Yaguang Li's Github</a>
+        </p>
+      </div>
+
+    </section>
+
+
+    <!-- Horizontal Line -->
+    <hr />
+
+    <!-- Projects -->
+    <section id="projects">
+
+      <h2>Projects</h2>
+
+      <ul class="project-container">
+        <!-- paste begin -->
+
+        <!-- BSS -->
+        <li class="project-entry">
+          <div class="project-icon-container">
+            <img class="project-icon" src="images/BSS.png" />
+          </div>
+          <div class="project-info-container">
+            <h3>Blind Source Separation Using Machine Learning Methods</h3>
+            <div class="project-description">
+              Applied Non-negative Matrix Factorization (NMF) and Fast Independent Component Analysis (FastICA)
+              algorithms to separate mixed signals from the high-density electromyography (HDEMG) data;<br>
+              Identified the number of motor unit (MU) sources from the original data by removing duplicate MUs in
+              the postprocessing phase, and calculated the MU action potentials on each dataset.
+              <br>
+              <em>Data source: provided by Professor <a href="http://mlsp.cs.cmu.edu/people/bhiksha/" target="_blank">
+                Bhiksha Raj</a></em>.
+            </div>
+            <div class="project-outer-links">
+              <code><a href="https://github.com/yaugangLi/Blind-Source-Separation-using-ML-methods" target="_blank">
+                Code</a></code>
+              <code><a href="BSS/Report.pdf" target="_blank">Report(using NeurIPS format)</a></code>
+            </div>
+          </div>
+        </li>
+
+        <!-- RL -->
+        <li class="project-entry">
+          <div class="project-icon-container">
+            <img class="project-icon" src="images/RL.png" />
+          </div>
+          <div class="project-info-container">
+            <h3>Legged Robot Locomotion Over Challenging Terrain</h3>
+            <div class="project-description">
+              Trained a quadrupedal robot called Jueying to walk up and down stairs with Raisim;<br>
+              Added exteroceptive information to produce proactive movement so that the robot was able to
+              automatically lift its legs when detecting stairs forward;<br>
+              Introduced curriculum learning method to let the robot better adapt to different challenging terrain;<br>
+              Redesigned the reward system to suit the demand of the task.
+              <br>
+            </div>
+            <div class="project-outer-links">
+              <code><a href="RL/demo.mp4" target="_blank">
+                Video</a></code>
+            </div>
+          </div>
+        </li>
+
+      <ul class="project-container">
+
+    <!-- Experience -->
+      <h2>Experience</h2>
+
+      <ul class="project-container">
+        <!-- paste begin -->
+
+        <!-- TA -->
+        <li class="project-entry">
+          <div class="project-icon-container">
+            <img class="project-icon" src="images/TA1.png" />
+          </div>
+          <div class="project-info-container">
+            <h3>TA Course: Robotics Innovation and Integrated Practice, ZJU</h3>
+            <div class="project-description">
+              Responsible for assigning practical projects to students, including basic and advanced tasks;<br>
+              Held office hours once every two weeks to give instructions to students on their assignments and
+              projects;<br>
+              Evaluated and graded students’ assignments at the end of the semester.
+              <br>
+              <em>Course instructor: Professor <a href="https://person.zju.edu.cn/en/0094198" target="_blank"> Jun Wu
+              </a></em>.
+            </div>
+          </div>
+        </li>
+
+        <!-- paste end -->
+      </ul>
+
+    <!-- Horizontal Line -->
+    <hr />
+
+    <!-- copyright -->
+    <p style="text-align: center; margin-bottom: 0rem;">© Yaguang Li </p>
+    <p style="text-align: center; margin-bottom: 4rem; margin-top: 0.5rem">Last Update: 2/25/2024 </p>
+
+
+  </body>
+
+</html>
